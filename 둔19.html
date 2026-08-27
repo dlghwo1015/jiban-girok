@@ -4,15 +4,17 @@
 body{background:var(--paper);color:var(--ink);font-family:"Pretendard Variable",Pretendard,"Apple SD Gothic Neo",sans-serif;line-height:1.9}
 .wrap{max-width:820px;margin:0 auto;padding:0 24px 120px}
 /* ── F 표지 ── */
-.cover{min-height:96vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
- border-bottom:1px solid var(--line)}
+.cover{min-height:96vh;display:flex;flex-direction:column;align-items:flex-end;justify-content:flex-start;
+ text-align:right;padding:9vh 7% 0 0;border-bottom:1px solid var(--line)}
+.cover>*{margin-left:auto}
+@media (max-width:760px){.cover{align-items:center;text-align:center;padding:8vh 20px 0}}
 .cv-seal{width:74px;height:74px;background:var(--seal);color:#f4eeda;border-radius:10px;display:flex;align-items:center;
  justify-content:center;font-family:"AppleMyungjo",serif;font-size:34px;line-height:1.1;margin-bottom:40px;
  box-shadow:inset 0 0 0 3px rgba(244,238,218,.2)}
 .cv-series{font-size:15px;letter-spacing:.6em;color:#3c4a4d;font-weight:700;text-shadow:0 1px 10px rgba(244,243,239,.9)}
 .cv-title{font-size:58px;font-weight:700;margin-top:26px;letter-spacing:.08em;font-family:"Noto Serif KR","AppleMyungjo",serif;text-shadow:0 1px 14px rgba(244,243,239,.9)}
 .cv-sub{color:#4b5654;margin-top:22px;font-size:15.5px;letter-spacing:.14em;line-height:2.1;text-shadow:0 1px 10px rgba(244,243,239,.85)}
-.cv-rule{width:52px;height:1px;background:var(--gold);margin:34px 0 0}
+.cv-rule{width:52px;height:1px;background:var(--gold);margin:30px 0 0}
 /* ── F 목차 ── */
 .toch{font-size:24px;font-weight:700;margin:20px 0 26px;display:flex;align-items:center}
 #tocall{margin-left:auto;background:none;border:1px solid #c2c7bc;color:#5d6866;font-family:inherit;
