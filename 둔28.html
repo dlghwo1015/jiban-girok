@@ -94,6 +94,9 @@ sup.fn{color:var(--brown);font-weight:700;font-size:.7em;margin-left:2px}
 .sidenotes{display:none}
 @media (min-width:1180px){
  .wrap{margin-left:clamp(32px,6vw,120px);margin-right:330px}
+ /* 주석은 현대역에 붙는 것이니, 원문 광곽은 그 오른쪽 여백을 도로 쓴다 —
+    그러지 않으면 넓은 화면에서 액자가 도리어 좁아져 원문이 넘친다. */
+ .gogo{margin-right:-304px}
  .sidenotes{display:block;position:absolute;left:100%;top:0;width:230px;margin-left:26px}
  .sidenotes .note{font-size:12.5px;line-height:1.7;margin:0 0 14px}
  .pair .modern .notes{display:none}
