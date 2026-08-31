@@ -73,6 +73,10 @@ h2::before{content:"";display:inline-block;width:26px;height:3px;background:var(
  background-image:repeating-linear-gradient(to left,transparent 0,transparent 56.5px,rgba(23,18,10,.5) 56.5px,rgba(23,18,10,.5) 57.5px);
  padding:0 4px;text-shadow:0 0 .4px #17120a}
 .won ruby rt{font-family:"Noto Serif KR","AppleMyungjo",serif;font-size:11px;color:#2a2112;letter-spacing:0;font-weight:600}
+.gwak + .gwak{margin-top:16px}
+.jjok{position:absolute;bottom:-11px;left:24px;background:var(--paper);color:var(--gold);
+ font-size:10.5px;letter-spacing:.22em;padding:2px 10px;border:1px solid var(--line);border-radius:12px;z-index:1}
+.gwak{position:relative}
 .glabel{font-size:11.5px;letter-spacing:.3em;color:#a08150;margin:10px 2px 0;text-align:right}
 /* ── 모던 현대역 + E 사이드노트 ── */
 .pair{position:relative;margin:14px 0 44px}
@@ -104,8 +108,8 @@ sup.fn{color:var(--brown);font-weight:700;font-size:.7em;margin-left:2px}
 footer{margin-top:90px;text-align:center;color:#9aa39d;font-size:12.5px;letter-spacing:.25em}
 /* ── 오른쪽 목차 메뉴 ── */
 #tocbar .toch{font-size:18px;margin:0 0 14px}
-#tocbar .ti{font-size:15.5px;padding:7px 4px;gap:10px}
-#tocbar .tgh{font-size:13px;letter-spacing:.2em;padding:9px 2px}
+#tocbar .ti{font-size:15.5px;padding:7px 4px;gap:10px;word-break:keep-all}
+#tocbar .tgh{font-size:13px;letter-spacing:.2em;padding:9px 2px;word-break:keep-all;line-height:1.55}
 #tocbar .tn{font-size:14px}
 #tocbar .cnt{font-size:12px}
 body{display:flex;min-height:100vh;
@@ -122,7 +126,7 @@ main{flex:1 1 0;min-width:0}
   <div class="cv-title">집안의 기록</div>
   <div class="cv-sub">둔암공 이춘환 · 하정공 이규석 — 두 대의 문집<br>원문 · 독음 · 현대역 · 주석</div>
   <div class="cv-rule"></div>
-  <div class="cv-sub" style="font-size:13.5px;margin-top:96px">목차에서 편을 고르십시오 — 검수를 마친 편부터 차례로 열립니다</div>
+  <div class="cv-sub" style="font-size:13.5px;margin-top:96px">목차에서 편을 고르십시오 — 서편 둘, 둔암유고 스물아홉, 하정유집 서른셋</div>
 </section>
 <div class="wrap">
 <footer>원문 · 독음 · 현대역 · 주석</footer>
